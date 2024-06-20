@@ -5,9 +5,10 @@ import * as tf from '@tensorflow/tfjs-core';
 import '@tensorflow/tfjs-converter';
 import '@tensorflow/tfjs-backend-webgl';
 import * as faceLandmarksDetection from '@tensorflow-models/face-landmarks-detection';
-import glassesSrc from './assets/images/sunglasses.png';
+import glassesImg from './assets/images/sunglasses.png';
 
-const VirtualTryOn = () => {
+const VirtualTryOn = (props) => {
+  const glassesSrc = props.uri;
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
   const [model, setModel] = useState(null);
