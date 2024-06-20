@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container:hover .img {
+  opacity: 0.3;
+}
+
+.container:hover .button {
+  opacity: 1;
+}
+
+.img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.button {
+
+  background-color: transparent;
+  border-top: 1px;
+  color: white;
+  font-size: 16px;
+  padding: 1px 2px;
+  border-color: darkseagreen;
+  border-radius: 5%;
+  transition: .5s ease;
+  opacity: 0;
+  text-align: center;
+}
